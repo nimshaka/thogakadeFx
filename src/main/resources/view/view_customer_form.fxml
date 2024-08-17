@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewCustomerFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f78fb3" height="93.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#574b90" height="365.0" layoutY="93.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="111.0" layoutY="19.0" text="ThogaKade Traders">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="40.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblCustomers" layoutX="44.0" layoutY="129.0" prefHeight="200.0" prefWidth="517.0" style="-fx-background-color: #f8a5c2;">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="85.66665649414062" text="Customer ID" />
+          <TableColumn fx:id="colName" prefWidth="102.33334350585938" text="Name" />
+            <TableColumn minWidth="0.0" prefWidth="0.0" text="Column X" />
+            <TableColumn fx:id="colAddress" prefWidth="102.66668701171875" text="Address" />
+            <TableColumn fx:id="colContact" prefWidth="121.33331298828125" text="Contact" />
+            <TableColumn fx:id="colDob" prefWidth="102.0" text="Date of Birth" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="235.0" layoutY="357.0" onAction="#btnReloadOnAction" style="-fx-background-color: #f8a5c2;" text="Reload">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="25.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="317.0" layoutY="423.0" prefHeight="27.0" prefWidth="276.0" text="Wholesale &amp; Retalils Merchants'" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
